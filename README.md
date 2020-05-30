@@ -1,39 +1,42 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+#Coffee Compass
+Coffee Compass is a 4 page website that allows users to find coffee shops near them, navigate to them and provides entertainment in the form of a game while they wait for the coffee. They can also keep track of where they went to,what they ordered and how they rated the service by adding it to the website DOM.
 
-Welcome USER_NAME,
+The goal of this project is to showcase the different technologies I used in this project such as google API’s and my knowledge of Javascript.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+##UX
+###Strategy
+My UX strategy is to design a website for users who want to find cool coffee shops near them that they didn’t know before. It also allows them to play a fun game while waiting for their coffee and when they have their coffee they are then able to write a little note and a review for next time to remind themselves of where they have been, what they ordered and the rating of the service out of 10. 
+The layout will contain...
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The following link shows the initial mockups for the PLACE LINK TO WIREFRAMES HERE
 
-`python3 -m http.server`
+##User Stories
+As a User, I must have clear instructions on how to use the website
+As a User, I must be able to search for any coffee shop near my locations
+As a User, I must be able to navigate to the coffee shop without leaving the website
+As a User, I must have an option play a game while I wait for my coffee
+As a User, I must be able to leave a personal review for each place that I’ve been to so that I can know where I have gone to and where I haven’t gone to,how the service was and what I ordered every time I’ve gone there.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+##Features
+###Existing Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##Technologies
 
-A blue button should appear to click: *Make Public*,
+##Resources
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+##Testing
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+##Deployment
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+##Credits
+##Content
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+##Media
+##Acknowledgements
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
-
-Happy coding!
