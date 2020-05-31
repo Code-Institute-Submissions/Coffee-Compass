@@ -5,26 +5,20 @@ coyote brown: #8A5D3C
 jet black:#322C25
 smokey black:#0A0705;
 background:#FFE9D1;
-
-
-
-
-<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="map.html">Find Coffee</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="games.html">Entertainment</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="review.html">Review</a>
-					</li>
-				</ul>
-
 */
+.instructions-div {
+    border: 3px solid #322C25;
+    border-radius: 10px;
+    background-color: #FFE9D1;
+    margin-bottom: 10px;
+}
+
+.instructions-div i {
+    font-size: 80px;
+    color: #0A0705;
+    text-shadow: 5px 10px rgba(204, 155, 101, 0.5);
+    margin:20px;
+    display:block;
+    
+    
+}

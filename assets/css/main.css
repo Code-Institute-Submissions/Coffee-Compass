@@ -1,10 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color:#FFE9D1;
-}
-div{
-    border:1px solid black;
+    background-color: #8A5D3C;
+    font-family: 'Chelsea Market', cursive;
+
+
 }
 
+h1 {
+    color: #322C25;
+    padding-top:3rem;
+    /*referenced from csstricks*/
+    -webkit-text-fill-color: #FFE9D1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #322C25;
+    text-transform: capitalize;
+
+}
+
+
+nav i {
+    color: #CC9B65;
+    font-size: 1.75rem;
+}
+
+
+.section-body {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+}
+
+
+.navbar-dark .navbar-brand {
+    color: #FFE9D1;
+}
+
+.bg-nav {
+    background-color: #322C25;
+}
+
+.progress-bar {
+
+    background-color: #322C25;
+}
+.btn-next {
+	color:#FFE9D1;
+    background-color: #322C25;
+	border-radius:10px;
+    margin-top: 3rem;
+    
+	
+}
+.btn-next:hover {
+    border-color:#FFE9D1 ;
+    color:#FFE9D1;
+}
+.hr-heading{
+    margin-bottom:3rem;
+    width:30%;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(138, 93, 60, 1), rgba(255, 233, 209, 1), rgba(138, 93, 60, 1));
+}
