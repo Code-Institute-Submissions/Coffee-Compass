@@ -1,0 +1,29 @@
+#game-play-div {
+    height:80vh;
+    width:100vw;
+    border: 3px solid #322C25;
+    border-radius: 10px;
+    background-color: #FFE9D1;
+    margin-bottom: 10px;
+}
+
+.score-div {
+    margin-top:1rem;
+/*Referenced this code from a tutorial I did with Travery Media*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.score-text {
+    color:#FFE9D1;;
+}
+
+@media only screen and (min-width: 1000px) {
+#game-play-div {
+    height:80vh;
+    width:80vw;
+    margin-right:10vw;
+    margin-left:10vw;
+    
+}
+}
