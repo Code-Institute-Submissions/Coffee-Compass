@@ -1,0 +1,14 @@
+.game-options {
+    margin-top: 3rem;
+    border: 3px solid #322C25;
+    border-radius: 10px;
+    background-color: #FFE9D1;
+    margin-bottom: 10px;
+}
+.game-heading{
+    padding-top:3px;
+}
+.game-btn {
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
