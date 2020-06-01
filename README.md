@@ -25,6 +25,7 @@ As a User, I must be able to leave a personal review for each place that I’ve 
 ##Technologies
 
 ##Resources
+https://coolors.co/ffe9d1-72401c-8a5d3c-322c25-0a0705
 
 
 ##Testing
