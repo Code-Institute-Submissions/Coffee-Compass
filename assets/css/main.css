@@ -65,3 +65,11 @@ nav i {
     height: 3px;
     background-image: linear-gradient(to right, rgba(138, 93, 60, 1), rgba(255, 233, 209, 1), rgba(138, 93, 60, 1));
 }
+.fadeOut {
+    opacity: 0;
+    transition:opacity 0.5s ease 0.6s;
+}
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.6s;
+}

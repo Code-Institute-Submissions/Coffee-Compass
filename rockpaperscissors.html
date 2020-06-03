@@ -74,54 +74,54 @@
   <div id="rockpaperscissorsgame">
     <div class=" score-div">
       <div class="score text-center">
-        <h5 class="score-text">Player:<span id="pScore"> 0</span></h5>
+        <h5 class="score-text">Player: <span id="pScore">0</span></h5>
       </div>
       <!-- <div class="col-sm-4 ">
         </div> -->
       <div class="score text-center">
-        <h5 class="score-text">Computer:<span id="cScore"> 0</span></h5>
+        <h5 class="score-text">Computer: <span id="cScore">0</span></h5>
       </div>
     </div>
     <div id="game-play-div">
       <div class="row">
         <div class="col col-sm-4"></div>
-        <div class="col col-sm-4 start-btn">
-          <a href="#" class="btn btn-next btn-lg">Start</a>
+        <div class="col col-sm-4 restart-btn">
+          <button id="restart-btn" class="btn btn-next btn-lg">Restart</button>
         </div>
         <div class="col col-sm-4"></div>
       </div>
       <div class="result-div">
         <div class="row">
           <div class="col col-sm-4">
-            <p class="text-center">Your choice:</p>
-            <img  class="choices-img" src="assets/img/rock.png" alt="your result">
+            <p class="text-center">You:</p>
+            <img  class="choices-img player-hand" src="assets/img/rock.png" alt="your result">
           </div>
           <div id="result" class="col col-sm-4">
-            <h3 class="result-text">Result:</h3>
-            <p class="result-text">Result here</p>
+            <h3>Result:</h3>
+            <p class="result-text"></p>
           </div>
           <div class="col col-sm-4">
-            <p class="text-center">Computer's choice:</p>
-            <img class="choices-img" src="assets/img/spock.png" alt="computer result">
+            <p class="text-center">Computer:</p>
+            <img class="choices-img computer-hand" src="assets/img/spock.png" alt="computer result">
           </div>
         </div>
       </div>
       <div class="options-div">
         <div class="row">
             <div class="col-sm-12">
-                <a class="btn btn-next btn-block btn-choice" id="spock" href="#">Spock</a>
+                <button class="btn btn-next btn-block btn-choice option" id="spock" >Spock</button>
             </div>
             <div class="col-sm-12">
-                <a class="btn btn-next btn-block btn-choice" id="paper" href="#">Paper</a>
+                <button class="btn btn-next btn-block btn-choice option" id="paper" >Paper</button>
             </div>
             <div class="col-sm-12">
-                <a class="btn btn-next btn-block btn-choice" id="Rock" href="#">Rock</a>
+                <button class="btn btn-next btn-block btn-choice option" id="rock">Rock</button>
             </div>
             <div class="col-sm-12">
-                <a class="btn btn-next btn-block btn-choice" id="lizard" href="#">Lizard</a>
+                <button class="btn btn-next btn-block btn-choice option" id="lizard" >Lizard</button>
             </div>
             <div class="col-sm-12">
-                <a class="btn btn-next btn-block btn-choice" id="scissors" href="#">Scissors</a>
+                <button class="btn btn-next btn-block btn-choice option" id="scissors" >Scissors</button>
             </div>
 
         </div>
@@ -135,7 +135,7 @@
   </section>
 
 
-
+<script src="js/rockpaperscissors.js"></script>
 </body>
 
 </html>
