@@ -26,3 +26,11 @@
     margin-bottom:3px;
     border-radius: 5px;
 }
+@media only screen and (min-width: 1000px) {
+    #div-form {
+        height: 20vh;
+        width: 80vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+}
