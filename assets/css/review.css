@@ -1,0 +1,28 @@
+#div-form {
+    height: 30vh;
+    width: 98vw;
+    margin-left: 1vw;
+    border: 3px solid #322C25;
+    border-radius: 10px;
+    background-color: #FFE9D1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 2px;
+}
+#review-btn{
+    margin-top:1rem;
+}
+#table-review {
+    width:80vw;
+    margin-left:10vw;
+}
+.table-content {
+    color:#FFE9D1;
+}
+.input {
+    width: 100%;
+    text-align: center;
+    margin-top:3px;
+    margin-bottom:3px;
+    border-radius: 5px;
+}

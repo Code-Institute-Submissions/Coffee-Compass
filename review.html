@@ -19,7 +19,7 @@
 	<script src="https://kit.fontawesome.com/e998d7fc85.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/review.css">
 	<title>Coffee Compass</title>
 </head>
 
@@ -68,6 +68,31 @@
      <div class="progress">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
         </div>
+</section>
+<section>
+        <div id="div-form">
+            <form>
+            <input class="input" id ="coffee-shop-name" placeholder="Coffee Shop's Name:" type="text">
+            <input class="input" id ="order" placeholder="Type Of Coffee:" type="text">
+            <input class="input" id ="service-rating" placeholder="Service Rating / 10:"  type="number">
+            <button id="review-btn" class="btn btn-next btn-block">Add Review</button>
+            </form>
+        </div>
+        <div>
+            <table  class="text-center" id="table-review">
+                <tr>
+                    <th class="h5">Name:</th>
+                    <th class="h5">Order:</th>
+                    <th class="h5">Service:</th>
+                </tr>
+                <tr class="table-content">
+                    <td>Cool Coffee</td>
+                    <td>Americano</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/review.js"></script>
 </section>
 
 </body>
