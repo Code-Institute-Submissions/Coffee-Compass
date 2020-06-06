@@ -2,6 +2,8 @@
 Coffee Compass is a 4 page website that allows users to find coffee shops near them, navigate to them and provides entertainment in the form of a game while they wait for the coffee. They can also keep track of where they went to,what they ordered and how they rated the service by adding it to the website DOM.
 
 The goal of this project is to showcase the different technologies I used in this project such as google API’s and my knowledge of Javascript.
+visit the website here:
+[I'm an inline-style link](https://xander-webdev.github.io/Coffee-Compass/index.html)
 
 ##UX
 ###Strategy
