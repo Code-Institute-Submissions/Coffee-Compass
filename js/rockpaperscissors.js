@@ -13,7 +13,7 @@ const game = () => {
         const options = document.querySelectorAll(".option");
         const computerOptions = ["spock", "paper", "rock", "lizard", "scissors"];
         let playerChoice = " ";
-        
+
 
         options.forEach((option) => {
             option.addEventListener("click", function () {
@@ -36,25 +36,26 @@ const game = () => {
             computerHand.src = `assets/img/lizard.png`
         })
     }
-    
+
     //use a function to compare player and computer choice
     const compareChoice = (playerChoice, computerChoice) => {
         const result = document.querySelector(".result-text");
-        //update score
-            const updateScore = () => {
-                playerScore.textContent = pScore;
-                computerScore.textContent = cScore;
-            }
-            const updateImgChoice = () =>{
-                playerHand.src = `assets/img/${playerChoice}.png`
-                computerHand.src = `assets/img/${computerChoice}.png`
-            }
-            const updateInnerTextWin = () =>{
-                result.innerText = "You win!";
-            }
-            const updateInnerTextLose = () =>{
-                result.innerText = "You lose!";
-            }
+        //update score and img function
+        const updateScore = () => {
+            playerScore.textContent = pScore;
+            computerScore.textContent = cScore;
+        }
+        const updateImgChoice = () => {
+            playerHand.src = `assets/img/${playerChoice}.png`
+            computerHand.src = `assets/img/${computerChoice}.png`
+        }
+        const updateInnerTextWin = () => {
+            result.innerText = "You win!";
+        }
+        const updateInnerTextLose = () => {
+            result.innerText = "You lose!";
+        }
+
         //checking for a tie
         if (playerChoice === computerChoice) {
             result.innerText = "It's a tie!"

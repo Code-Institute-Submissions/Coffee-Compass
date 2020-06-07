@@ -27,8 +27,7 @@ As a User, I must be able to leave a personal review for each place that I’ve 
 ##Technologies
 
 ##Resources
-https://coolors.co/ffe9d1-72401c-8a5d3c-322c25-0a0705
-https://onlinepngtools.com/create-transparent-png
+
 
 
 ##Testing
@@ -38,8 +37,23 @@ https://onlinepngtools.com/create-transparent-png
 
 ##Credits
 ##Content
+colors:
+logo color:#CC9B65
+kobicha: #72401C
+coyote brown: #8A5D3C
+jet black:#322C25
+smokey black:#0A0705;
+background:#FFE9D1;
+
+
+
 
 ##Media
+https://unsplash.com/s/photos/latte-art-top-view
+https://unsplash.com/@pundalex
+https://pixlr.com/x/
+https://coolors.co/ffe9d1-72401c-8a5d3c-322c25-0a0705
+https://onlinepngtools.com/create-transparent-png
 ##Acknowledgements
 
 
