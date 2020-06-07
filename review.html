@@ -81,16 +81,38 @@
         <div>
             <table  class="text-center" id="table-review">
                 <tr>
-                    <th  class="h5">Name:</th>
-                    <th  class="h5">Order:</th>
-                    <th  class="h5">Service:</th>
+                    <thead>
+                        <div class="row">
+                        <div class=" col col-sm-4">
+                             <th class="h6"><strong>Name:</strong></th>
+                        </div>
+                        <div class=" col col-sm-4">
+                            <th class="h6"><strong>Order:</strong></th>
+                        </div>
+                        <div class="col col-sm-4">
+                            <th class="h6"><strong>Rating:</strong></th>
+                        </div>
+                        <div class="col col-sm-4">
+                            <th class="h6"><i class="fas fa-trash"></i></th>
+                        </div> 
+                        </div>
+                    </thead>
                 </tr>
-                <tr class="table-content">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <div class="table-div">
+                    <tbody id="table-content">
+                    </tbody>
+                
+                </div>
+                
             </table>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+            <a href="map.html" id="review-page-btn" class="btn btn-next btn-block text-center">Find More Coffee?</a>
+            </div>
+            <div class="col-sm-2"></div>
         </div>
         <script src="js/review.js"></script>
 </section>

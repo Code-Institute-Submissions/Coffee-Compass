@@ -16,8 +16,11 @@
     width:80vw;
     margin-left:10vw;
 }
-.table-content {
+#table-content {
     color:#FFE9D1;
+}
+#review-page-btn{
+    margin-top:3rem;
 }
 .input {
     width: 100%;
@@ -28,7 +31,7 @@
 }
 @media only screen and (min-width: 1000px) {
     #div-form {
-        height: 20vh;
+        height: 30vh;
         width: 80vw;
         margin-right: 10vw;
         margin-left: 10vw;
