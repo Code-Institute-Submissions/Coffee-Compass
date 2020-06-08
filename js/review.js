@@ -6,6 +6,55 @@ const reviewFunc = () => {
         this.name = name;
         this.order = order;
         this.rating = rating;
+    };
+    //UI constructors
+    function UI() {}
+
+    //add review to dom
+    ////create the tr element, insert cols and append
+    ////clear fields
+    //adding the push to page function to the UI prototype
+    UI.prototype.pushToPage = (review) => {
+        let tContent = document.querySelector("#table-content");
+        let reviewRow = document.createElement("tr");
+        reviewRow.innerHTML =
+            `
+            <td>${review.name}</td>
+            <td>${review.order}</td>
+            <td>${review.rating}</td>
+            <td><a href="#" class="btn btn-danger btn-sm">X</a></td>
+       `;
+        tContent.appendChild(reviewRow);
+        //clear the fields after a submit
+        let name = document.querySelector("#name").value = "";
+        let order = document.querySelector("#order").value = "";
+        let rating = document.querySelector("#rating").value = "";
+    };
+
+    //event listener and declaring the new objects
+    //also preventing the default submit of the form as I want to push the data onto the dom
+    document.querySelector("#input-form").addEventListener("submit", (e) => {
+        let name = document.querySelector("#name").value;
+        let order = document.querySelector("#order").value;
+        let rating = document.querySelector("#rating").value;
+
+        let review = new Review(name, order, rating);
+        let ui = new UI();
+
+        ui.pushToPage(review);
+        e.preventDefault();
+    });
+    //delete review 
+    //save to the browswer
+
+}
+reviewFunc();
+/*const reviewFunc = () => {
+    //review constructor
+    function Review(name, order, rating) {
+        this.name = name;
+        this.order = order;
+        this.rating = rating;
     }
     //UI constructors
     function UI() {}
@@ -41,8 +90,4 @@ const reviewFunc = () => {
         e.preventDefault();
     });
     //delete review 
-    //save to the browswer
-
-}
-reviewFunc();
-
+    //save to the browswer */
