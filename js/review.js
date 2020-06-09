@@ -17,18 +17,30 @@ const reviewFunc = () => {
     UI.prototype.pushToPage = (review) => {
         let tContent = document.querySelector("#table-content");
         let reviewRow = document.createElement("tr");
-        reviewRow.innerHTML =
-            `
+
+
+        if (name.value === "" || order.value === "" || rating.value === "") {
+            alertUserIncomplete();
+             setTimeout(hideAlert,1500)
+        } else {
+            reviewRow.innerHTML =
+                `
             <td>${review.name}</td>
             <td>${review.order}</td>
             <td>${review.rating}</td>
             <td><a href="#" class="btn btn-danger btn-sm">X</a></td>
        `;
-        tContent.appendChild(reviewRow);
-        //clear the fields after a submit
-        let name = document.querySelector("#name").value = "";
-        let order = document.querySelector("#order").value = "";
-        let rating = document.querySelector("#rating").value = "";
+
+            tContent.appendChild(reviewRow);
+            //clear the fields after a submit
+            let name = document.querySelector("#name").value = "";
+            let order = document.querySelector("#order").value = "";
+           ;
+            alertUserComplete();
+            setTimeout(hideAlert,1500)
+
+        };
+
     };
 
     //event listener and declaring the new objects
@@ -41,53 +53,25 @@ const reviewFunc = () => {
         let review = new Review(name, order, rating);
         let ui = new UI();
 
+
         ui.pushToPage(review);
         e.preventDefault();
     });
-    //delete review 
-    //save to the browswer
+    const alertUserIncomplete = () => {
+        let alertMsgIncomplete = document.querySelector(".alert-msg");
+        alertMsgIncomplete.innerHTML = `<h3 class="text-danger">Please Complete All Fields!</h3>`;
+        //delete review 
+        //save to the browswer
+        //test if fields are filled
 
+    }
+    const alertUserComplete = () =>{
+        let alertMsgComplete = document.querySelector(".alert-msg");
+        alertMsgComplete.innerHTML = `<h3 class="text-success">Review Added!</h3>`;
+    }
+    const hideAlert = () =>{
+        let alert = document.querySelector(".alert-msg");
+        alert.textContent = " ";
+    }
 }
 reviewFunc();
-/*const reviewFunc = () => {
-    //review constructor
-    function Review(name, order, rating) {
-        this.name = name;
-        this.order = order;
-        this.rating = rating;
-    }
-    //UI constructors
-    function UI() {}
-
-    //add review to dom
-    ////create the tr element, insert cols and append
-    ////clear fields
-    UI.prototype.pushToDOM = function (review) {
-        let tContent = document.querySelector("#table-content");
-        let reviewRow = document.createElement("tr");
-        reviewRow.innerHTML =
-            `
-        <td>${review.name}</td>
-        <td>${review.order}</td>
-        <td>${review.rating}</td>
-        <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
-        `;
-        tContent.appendChild(reviewRow);
-        let name = document.querySelector("#name").value = "";
-        let order = document.querySelector("#order").value = "";
-        let rating = document.querySelector("#rating").value = "";
-    }
-
-    //event listener
-    document.querySelector("#input-form").addEventListener("submit", (e) => {
-        let name = document.querySelector("#name").value;
-        let order = document.querySelector("#order").value;
-        let rating = document.querySelector("#rating").value;
-
-        let review = new Review(name, order, rating)
-        let ui = new UI();
-        ui.pushToDOM(review);
-        e.preventDefault();
-    });
-    //delete review 
-    //save to the browswer */
