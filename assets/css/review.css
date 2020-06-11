@@ -1,5 +1,5 @@
 #div-form {
-    height: 30vh;
+    height: 195px;
     width: 98vw;
     margin-left: 1vw;
     border: 3px solid #322C25;
@@ -21,6 +21,9 @@
 }
 #review-page-btn{
     margin-top:3rem;
+}
+#table-head{
+    margin-top: 2rem;
 }
 .input {
     width: 100%;
