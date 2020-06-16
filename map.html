@@ -70,8 +70,9 @@
         </div>
 </section>
 <!--Map Div-->
-    <div id="div-map" class="container-fluid">
-        <img src="assets/img/google-maps.png" alt="google maps">
+<button class="btn btn-next btn-block btn-locate">Auto Locate</button>
+    <div id="map" class="container-fluid">
+    
     </div>
 <section class="section-body text-center">
 
@@ -80,7 +81,11 @@
     </div>
 </section>
 
-
+    <script defer async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqUi_bitlU_qt4Qzu4b_1pGRPE4ddZdE&libraries=places&callback=initMap">
+        
+    </script>
+    <script type="text/javascript" src="js/map.js"></script>
 </body>
 
-</html>
+</html> 

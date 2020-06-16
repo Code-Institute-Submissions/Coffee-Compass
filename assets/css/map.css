@@ -1,18 +1,20 @@
-#div-map{
-    margin-top: 3rem;
+#map {
     border: 3px solid #322C25;
     border-radius: 10px;
-    background-color: #FFE9D1;
     margin-bottom: 1rem;
     width: 100vw;
-    height:300px;
+    height: 300px;
+}
+
+.btn-locate {
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 1000px) {
-#div-map {
-    width:80vw;
-    margin-right:10vw;
-    margin-left:10vw;
-    
-}
+    #map {
+        width: 80vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+
+    }
 }
