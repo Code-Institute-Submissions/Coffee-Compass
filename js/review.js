@@ -1,4 +1,4 @@
-//I referenced a lot of this code from a project I did on Travery Media's Udemy Course Javascript From The Beginning booklist project which I adapted for use of pushing the reviews to the dom as this was out of my scope of knowledge. I did however write this javascript over and over again until I could write it without refering to the code from the project at all. The syntax may be similar as that project.
+
 
 const reviewFunc = () => {
     //review constructor
@@ -91,7 +91,7 @@ const reviewFunc = () => {
     }
     const hideAlert = () => {
         let alert = document.querySelector(".alert-msg");
-        alert.textContent = " ";
+        alert.innerHTML = `<h3 class="alert-msg text-center brown-text">Result Here</h3>`;
     }
 };
 reviewFunc();
