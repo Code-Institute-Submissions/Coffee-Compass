@@ -32,8 +32,8 @@ const game = () => {
             cScore = 0;
             playerScore.innerText = "0";
             computerScore.innerText = "0";
-            playerHand.src = `assets/img/spock.png`
-            computerHand.src = `assets/img/lizard.png`
+            playerHand.src = `assets/img/rock.png`
+            computerHand.src = `assets/img/rock.png`
         })
     }
 
