@@ -38,6 +38,20 @@
 
 }
 
+#rules-img {
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-header{
+    display: inline-block;
+}
+.modal-content {
+    background-color: #FFE9D1;
+    width: 90%;
+    margin-left: 5%;
+}
 
 
 @media only screen and (min-width: 1000px) {
@@ -53,7 +67,7 @@
         margin-right: auto;
     }
 
-   .result-text {
+    .result-text {
         padding-left: 33%;
     }
 
