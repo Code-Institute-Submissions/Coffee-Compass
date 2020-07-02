@@ -76,7 +76,7 @@ function createMarker(place, coffeeInfo) {
     coffeeInfo.setContent("<strong>Name: </strong>" + cafeName + "<br>" + "<strong>Rating: </strong>" + cafeRating + "/5" + "<br>"+ "<strong>Address: </strong>" + cafeAd);
     coffeeInfo.open(map, this);
   });
-};
+}
 
 function handleLocationError(browserHasGeolocation, usersCurrentLocation, pos) {
   usersCurrentLocation.setPosition(pos);
@@ -86,5 +86,5 @@ function handleLocationError(browserHasGeolocation, usersCurrentLocation, pos) {
       : "Error: Your browser doesn't support geolocation."
   );
   usersCurrentLocation.open(map);
-};
+}
 initMap();

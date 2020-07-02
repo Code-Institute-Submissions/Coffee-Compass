@@ -1,3 +1,4 @@
+/* the review form styling */
 #div-form {
     height: 195px;
     width: 98vw;
@@ -9,12 +10,15 @@
     margin-top: 10px;
     padding: 2px;
 }
+/* text class */
 .brown-text{
     color:#8A5D3C;
 }
+/* review btn styling */
 #review-btn{
     margin-top:1rem;
 }
+/* the review table styling (this is where objects get pushed to) */
 #table-review {
     width:80vw;
     margin-left:10vw;
@@ -22,9 +26,11 @@
 #table-content {
     color:#FFE9D1;
 }
+/* review btn styling  */
 #review-page-btn{
     margin-top:3rem;
 }
+/* the review row styling to add a margin to the top and give the proper spacing */
 #table-head{
     margin-top: 2rem;
 }
@@ -35,6 +41,7 @@
     margin-bottom:3px;
     border-radius: 5px;
 }
+/* media query for desktop */
 @media only screen and (min-width: 1000px) {
     #div-form {
         height: 30vh;

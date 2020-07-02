@@ -1,15 +1,14 @@
+/* this is the main css page so all the styles that would apply to all of the elements would be here */
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-
+/* body style */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #8A5D3C;
     font-family: 'Chelsea Market', cursive;
-
-
 }
-
+/* all of the h1 styles */
 h1 {
     color: #322C25;
     padding-top:3rem;
@@ -18,53 +17,49 @@ h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #322C25;
     text-transform: capitalize;
-
 }
-
-
+/* logo style */
 nav i {
     color: #CC9B65;
     font-size: 1.75rem;
 }
-
-
+/* section element style */
 .section-body {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     height: 100%;
 }
-
-
+/* navbar styling */
 .navbar-dark .navbar-brand {
     color: #FFE9D1;
 }
-
 .bg-nav {
     background-color: #322C25;
 }
-
+/* progress bar styling */
 .progress-bar {
-
     background-color: #322C25;
 }
+/* main button style on the website */
 .btn-next {
 	color:#FFE9D1;
     background-color: #322C25;
 	border-radius:10px;
     margin-bottom:1rem;
-	
 }
 .btn-next:hover {
     border-color:#FFE9D1 ;
     color:#FFE9D1;
 }
+/* horizontal rule styling */
 .hr-heading{
     margin-bottom:3rem;
     width:30%;
     height: 3px;
     background-image: linear-gradient(to right, rgba(138, 93, 60, 1), rgba(255, 233, 209, 1), rgba(138, 93, 60, 1));
 }
+/* fade in and out classes to be dynamically added */
 .fadeOut {
     opacity: 0;
     transition:opacity 0.5s ease 0.6s;

@@ -1,12 +1,10 @@
-
-
 const reviewFunc = () => {
     //review constructor
     function Review(name, order, rating) {
         this.name = name;
         this.order = order;
         this.rating = rating;
-    };
+    }
     //UI constructors
     function UI() {}
 
@@ -18,7 +16,7 @@ const reviewFunc = () => {
             reviewDeleted();
             setTimeout(hideAlert, 1500);
         }
-    }
+    };
     //add review to dom
     ////create the tr element, insert cols and append
     ////clear fields
@@ -28,7 +26,7 @@ const reviewFunc = () => {
         let reviewRow = document.createElement("tr");
         if (name.value === "" || order.value === "" || rating.value === "") {
             alertUserIncomplete();
-            setTimeout(hideAlert, 1500)
+            setTimeout(hideAlert, 1500);
         } else {
             reviewRow.innerHTML =
                 `
@@ -38,18 +36,14 @@ const reviewFunc = () => {
           <td><a href="#" id="delete" class="btn btn-danger btn-sm">X</a></td>
      `;
             tContent.appendChild(reviewRow);
-            //add book to local storage
             //clear the fields after a submit
             let name = document.querySelector("#name").value = "";
             let order = document.querySelector("#order").value = "";
             let rating = document.querySelector("#rating").value = "";
             alertUserComplete();
-
-            setTimeout(hideAlert, 1500)
-        };
+            setTimeout(hideAlert, 1500);
+        }
     };
-
-
 
     //event listener and declaring the new objects
     //also preventing the default submit of the form as I want to push the data onto the dom
@@ -80,20 +74,18 @@ const reviewFunc = () => {
     const alertUserIncomplete = () => {
         let alertMsgIncomplete = document.querySelector(".alert-msg");
         alertMsgIncomplete.innerHTML = `<h3 class="text-danger">Please Complete All Fields!</h3>`;
-    }
+    };
     const alertUserComplete = () => {
         let alertMsgComplete = document.querySelector(".alert-msg");
         alertMsgComplete.innerHTML = `<h3 class="text-success">Review Added!</h3>`;
-    }
+    };
     const reviewDeleted = () => {
         let reviewMsgDeleted = document.querySelector(".alert-msg");
         reviewMsgDeleted.innerHTML = `<h3 class="text-success">Review Deleted!</h3>`;
-    }
+    };
     const hideAlert = () => {
         let alert = document.querySelector(".alert-msg");
         alert.innerHTML = `<h3 class="alert-msg text-center brown-text">Result Here</h3>`;
-    }
+    };
 };
 reviewFunc();
-//to do
-/////add in local storage functionality
