@@ -6,10 +6,12 @@
     width: 100vw;
     height: 300px;
 }
+
 /* auto locate button styling */
 .locate {
     margin-top: 1rem;
 }
+
 /* media query for desktop screens  */
 @media only screen and (min-width: 1000px) {
     #map {

@@ -8,6 +8,7 @@ document.querySelector("#btn-locate").addEventListener("click", function (e) {
   initMap();
   e.preventDefault();
 });
+
 function initMap() {
   map = new google.maps.Map(document.querySelector("#map"), {
     center: {
@@ -70,10 +71,9 @@ function createMarker(place, coffeeInfo) {
   });
 
   google.maps.event.addListener(marker, "click", function () {
-      let cafeName = place.name;
-      let cafeRating = place.rating;
-      let cafeAd = place.formatted_address;
-    coffeeInfo.setContent("<strong>Name: </strong>" + cafeName + "<br>" + "<strong>Rating: </strong>" + cafeRating + "/5" + "<br>"+ "<strong>Address: </strong>" + cafeAd);
+    let cafeName = place.name;
+    let cafeRating = place.rating;
+    coffeeInfo.setContent("<strong>Name: </strong>" + cafeName + "<br>" + "<strong>Rating: </strong>" + cafeRating + "/5");
     coffeeInfo.open(map, this);
   });
 }
@@ -81,9 +81,9 @@ function createMarker(place, coffeeInfo) {
 function handleLocationError(browserHasGeolocation, usersCurrentLocation, pos) {
   usersCurrentLocation.setPosition(pos);
   usersCurrentLocation.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
+    browserHasGeolocation ?
+    "Error: The Geolocation service failed." :
+    "Error: Your browser doesn't support geolocation."
   );
   usersCurrentLocation.open(map);
 }

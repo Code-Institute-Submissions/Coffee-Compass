@@ -1,113 +1,124 @@
 /* this is the main css page so all the styles that would apply to all of the elements would be here */
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
 /* body style */
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #8a5d3c;
-  font-family: "Chelsea Market", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8a5d3c;
+    font-family: "Chelsea Market", cursive;
 }
+
 /* all of the h1 styles */
 h1 {
-  color: #322c25;
-  padding-top: 3rem;
-  /*referenced from csstricks*/
-  -webkit-text-fill-color: #ffe9d1;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #322c25;
-  text-transform: capitalize;
+    color: #322c25;
+    padding-top: 3rem;
+    /*referenced from csstricks*/
+    -webkit-text-fill-color: #ffe9d1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #322c25;
+    text-transform: capitalize;
 }
+
 /* logo style */
 nav i {
-  color: #cc9b65;
-  font-size: 1.75rem;
+    color: #cc9b65;
+    font-size: 1.75rem;
 }
+
 /* section element style */
 .section-body {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
 }
+
 /* navbar styling */
 .navbar-dark .navbar-brand {
-  color: #ffe9d1;
+    color: #ffe9d1;
 }
+
 .bg-nav {
-  background-color: #322c25;
+    background-color: #322c25;
 }
+
 /* progress bar styling */
 .progress-bar {
-  background-color: #322c25;
+    background-color: #322c25;
 }
+
 /* main button style on the website */
 .btn-next {
-  box-shadow: inset 0px 1px 0px 0px rgb(66, 58, 49);
-  background: linear-gradient(
-    to bottom,
-    rgb(83, 70, 54) 5%,
-    rgb(50, 44, 37) 100%
-  );
-  color: #ffe9d1;
-  background-color: #322c25;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  cursor: pointer;
+    box-shadow: inset 0px 1px 0px 0px rgb(66, 58, 49);
+    background: linear-gradient(to bottom,
+            rgb(83, 70, 54) 5%,
+            rgb(50, 44, 37) 100%);
+    color: #ffe9d1;
+    background-color: #322c25;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
+
 .btn-next:hover {
-  background: linear-gradient(
-    to bottom,
-    rgb(50, 44, 37) 5%,
-    rgb(83, 70, 54) 100%
-  );
-  color: #ffe9d1;
+    background: linear-gradient(to bottom,
+            rgb(50, 44, 37) 5%,
+            rgb(83, 70, 54) 100%);
+    color: #ffe9d1;
 }
+
 /* copied from css tricks */
 .animation {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 @keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
+
 /* horizontal rule styling */
 .hr-heading {
-  margin-bottom: 3rem;
-  width: 30%;
-  height: 3px;
-  background-image: linear-gradient(
-    to right,
-    rgba(138, 93, 60, 1),
-    rgba(255, 233, 209, 1),
-    rgba(138, 93, 60, 1)
-  );
+    margin-bottom: 3rem;
+    width: 30%;
+    height: 3px;
+    background-image: linear-gradient(to right,
+            rgba(138, 93, 60, 1),
+            rgba(255, 233, 209, 1),
+            rgba(138, 93, 60, 1));
 }
+
 /* fade in and out classes to be dynamically added */
 .fadeOut {
-  opacity: 0;
-  transition: opacity 0.5s ease 0.6s;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.6s;
 }
+
 .fadeIn {
-  opacity: 1;
-  transition: opacity 0.5s ease 0.6s;
+    opacity: 1;
+    transition: opacity 0.5s ease 0.6s;
 }

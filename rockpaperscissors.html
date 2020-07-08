@@ -26,13 +26,13 @@
 <body>
   <!--header-->
   <header>
-
     <nav class="navbar navbar-dark bg-nav navbar-expand-xxl">
       <a class="navbar-brand" href="index.html"><i class="fas fa-compass"></i> The Coffee Compass</a>
       <!--bootstrap hamburger mobile button from Bootstrap Libraries-->
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggler-icon"></span></button>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -53,53 +53,53 @@
         </ul>
       </div>
     </nav>
-
   </header>
 
-<!--Page Content-->
+  <!--Page Content-->
   <section class="section-title text-center container-fluid">
     <div class="page-title">
       <h1>Spock, Paper, Rock, Lizard and Scissors</h1>
       <hr class="hr-heading">
     </div>
   </section>
+
   <section class="section-body">
-  
- 
-<!--Progress Bar from bootstrap libraries-->
+    <!--Progress Bar from bootstrap libraries-->
 
     <div class="progress">
       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="66.6"
         aria-valuemin="0" aria-valuemax="100" style="width: 66.6%"></div>
     </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-next btn-block locate" data-toggle="modal" data-target="#rules">
-  Game Rules
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="rules" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="ModalTitle">Game Rules</h5>
-      </div>
-      <div class="modal-body">
-        <img id="rules-img" src="assets/img/rps_img.png" alt="game rules">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-next btn-block" data-dismiss="modal">Close</button>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-next btn-block locate" data-toggle="modal" data-target="#rules">
+      Game Rules
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="rules" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="ModalTitle">Game Rules</h5>
+          </div>
+          <div class="modal-body">
+            <img id="rules-img" src="assets/img/rps_img.png" alt="game rules">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-next btn-block" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   </section>
+
   <div id="rockpaperscissorsgame">
     <div class=" score-div">
       <div class="score text-center">
         <h5 class="score-text">Player: <span id="pScore">0</span></h5>
       </div>
-    
+
       <div class="score text-center">
         <h5 class="score-text">Computer: <span id="cScore">0</span></h5>
       </div>
@@ -116,7 +116,7 @@
         <div class="row">
           <div class="col col-sm-4">
             <p class="text-center">You:</p>
-            <img  class="choices-img player-hand" src="assets/img/rock.png" alt="your result">
+            <img class="choices-img player-hand" src="assets/img/rock.png" alt="your result">
           </div>
           <div id="result" class="col col-sm-4">
             <h3 class="text-center">Result:</h3>
@@ -130,32 +130,33 @@
       </div>
       <div class="options-div">
         <div class="row">
-            <div class="col-sm-12">
-                <button class="btn btn-next btn-block btn-choice option" id="spock" >Spock</button>
-            </div>
-            <div class="col-sm-12">
-                <button class="btn btn-next btn-block btn-choice option" id="paper" >Paper</button>
-            </div>
-            <div class="col-sm-12">
-                <button class="btn btn-next btn-block btn-choice option" id="rock">Rock</button>
-            </div>
-            <div class="col-sm-12">
-                <button class="btn btn-next btn-block btn-choice option" id="lizard" >Lizard</button>
-            </div>
-            <div class="col-sm-12">
-                <button class="btn btn-next btn-block btn-choice option" id="scissors" >Scissors</button>
-            </div>
+          <div class="col-sm-12">
+            <button class="btn btn-next btn-block btn-choice option" id="spock">Spock</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-next btn-block btn-choice option" id="paper">Paper</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-next btn-block btn-choice option" id="rock">Rock</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-next btn-block btn-choice option" id="lizard">Lizard</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-next btn-block btn-choice option" id="scissors">Scissors</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- button to navigate to the next page -->
   <div class="buttonnavdiv">
-      <a href="review.html" class="btn btn-next btn-block">I'm ready to review</a>
-    </div>
+    <a href="review.html" class="btn btn-next btn-block">I'm ready to review</a>
+  </div>
 
 
-<script src="js/rockpaperscissors.js"></script>
+  <script src="js/rockpaperscissors.js"></script>
 </body>
 
 </html>

@@ -9,19 +9,23 @@
     margin-bottom: 10px;
     padding: 2px;
 }
+
 /* score div & text styling */
 .score-div {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 .score-text {
     color: #FFE9D1;
 }
+
 .restart-btn {
     margin-top: 1rem;
     width: 50%;
 }
+
 .choices-img {
     height: 50px;
     width: 50px;
@@ -30,20 +34,24 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 /* modal content styling */
 #rules-img {
     height: 80%;
     width: 100%;
     border-radius: 10px;
 }
-.modal-header{
+
+.modal-header {
     display: inline-block;
 }
+
 .modal-content {
     background-color: #FFE9D1;
     width: 90%;
     margin-left: 5%;
 }
+
 .locate {
     margin-top: 1rem;
 }
@@ -56,10 +64,12 @@
         margin-right: 10vw;
         margin-left: 10vw;
     }
+
     .start-btn {
         margin-left: 10%;
         margin-right: auto;
     }
+
     .result-text {
         padding-left: 33%;
     }

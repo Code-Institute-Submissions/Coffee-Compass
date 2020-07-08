@@ -5,11 +5,12 @@
     background-color: #FFE9D1;
     margin-bottom: 10px;
 }
+
 /* styling of the i element within the instruction divs */
 .instructions-div i {
     font-size: 80px;
     color: #0A0705;
     text-shadow: 5px 10px rgba(204, 155, 101, 0.5);
-    margin:20px;
-    display:block;
+    margin: 20px;
+    display: block;
 }

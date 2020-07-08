@@ -12,13 +12,17 @@ Visit the repo here:
 ## UX
 
 ### Strategy
+My idea for this web application came from 3 problems I had. The first is that I'm a creature of habit and love to frequent the same places for my coffee needs. I needed new places to get coffee. The second is that I hate the wait that seems to take an enternity when the coffee shop is busy. I needed entertainment during long waits for orders. The third problem is remembering what I had the last time and trying something new this time around. I needed a way to remember what I had the last time and rate the service and overall atmosphere.
+
 My UX strategy is to design a website for users who want to find cool coffee shops near them that they didn’t know before. It also allows them to play a fun game while waiting for their coffee and when they have their coffee they are then able to write a little note and a review for next time to remind themselves of where they have been, what they ordered and the rating of the service out of 10. 
+
+
 The layout will contain 4 pages. 
 The first being an instructional page, the second the maps allowing the user to find a coffee shop near their current location, the 3rd being the rock paper scissors game (with a twist) and lastly the review page where the user is able to leave a review for themselves to remind them of where they were the last time.
 
 
 The following link shows the initial mockups for the project 
-[Cofeee Compass Wireframe](https://github.com/xander-webdev/Coffee-Compass/blob/3b3aadb439ca36c9cf34eed5e101b12d1f868bad/coffee-compass-wireframe.pdf)
+[Cofeee Compass Wireframe](https://ee18e533-dddb-4f8c-924e-a2a42bd4a058.ws-eu01.gitpod.io/files/download/?id=9c1d06b4-f7a7-45fc-bfa9-8b51dddd82cc)
 
 ## User Stories
 - As a User, I must have clear instructions on how to use the website
@@ -28,11 +32,18 @@ The following link shows the initial mockups for the project
 - As a User, I must be able to leave a personal review for each place that I’ve been to so that I can know where I have gone to and where I haven’t gone to,how the service was and what I ordered every time I’ve gone there.
 
 
-## Features
-- Mobile friendly
-- Search for coffee shops/cafes near me and also see the star ratings, address and name of the shop
-- Play rock, lizard, spock paper and scissors while you wait and see the score be updated in the DOM as you play
-- Write a review and store it to the DOM.
+# Features
+## Existing Features
+- Navbar which is fixed to the top for easy navigation. 
+    - Includes: Home|Find Coffee|Entertainment|Review.
+    - Each of these navigates the user throughout the application.
+- Home:
+    - On the home page, I have dymanically added a class that makes the instructional divs animate to incase the user clicks on them. This prompts the user to continue to read the instructions and navigate to the navigational button at the bottom of the page.
+    - The navigation button at the bottom is huge and very obvious. 
+- Find Coffee:
+    - The google map is added into the application with the google maps API. I added in an auto locate button incase the user wants to find their location again once they have moved or simply to refresh the map.
+    - The once the user allows the geolocation the coffee shops near the users location drop onto the screen adding a nice effect.
+    - 
 
 ### Features to impliment
 - Local storage of the review to the DOM once it get's posted
@@ -42,15 +53,23 @@ The following link shows the initial mockups for the project
 ## Technologies
 Technologies I used in this project are:
 - HTML5
+    - for the layout and general structure of the website
 - CSS3
+    - for the design aspect and adding the styling for each of the pages
 - Vanilla Javascript
+    - for the functionality interacting with the Google Maps API, addiing the logic to the rock paper scissors functions, adding the logic to the review page and other bits of logic throughout the application.
+- Git 
+    - for pushing commits and changes to the project
+- Github
+    - for storing the code, hosting it and adding changes to it.
 
 ### Frameworks
 - Bootstrap
 
+
 ## Resources
 - Travery Media Youtube Channel 
-- Travery Media Udemy Course
+- Travery Media Udemy Course "Javascript from the beginning"
 - Google Maps Documentation
 - Bootstrap Documentation
 - Stack Overflow
@@ -61,11 +80,14 @@ Technologies I used in this project are:
 - I've implemented Jasmine Testing for the Rock Paper Scissors game and all tests have passed the required tests.
 - I ran the CSS through a CSS checker and no errors found [CSS Checker](https://jigsaw.w3.org/css-validator/)
 - I ran the code through a HTML checker and no errors found with only warnings for no "H" titles in certain sectiona elements. This was left empty due to them being dymanically filled with Javascript. [HTML Checker](https://validator.w3.org/nu/#l96c39)
-- There were nono errors found when running the Javascript through [JSHint](https://jshint.com/) only warnings that I was using ES6 that may not be compatable to all browsers.
+- There were nono errors found when running the Javascript through [JSHint](https://jshint.com/) only warnings that I was using ES6 syntax that may not be compatable to all browsers.
 
 ## Deployment
+- Open the GitHub console
+- Type in "Python3 -m http.server"
+- Open up port 8000
 
-## Credits
+# Credits
 ## Content
 ### Colors
 - logo color:#CC9B65
@@ -78,7 +100,22 @@ Technologies I used in this project are:
 Rock, Paper, Lizard, Spock and Scissors were taken from this [Quora Post](https://www.quora.com/What-are-other-variations-of-rock-scissors-paper-hand-game)
 [Pixlr Online Photoshop](https://pixlr.com/x/)
 [Online PNG Tools](https://onlinepngtools.com/create-transparent-png)
+[Font Awesome](https://fontawesome.com/)
+
 ## Acknowledgements
+
+These websites provided me with invaluable information:
+
+https://www.w3schools.com/
+https://www.bestcssbuttongenerator.com/
+https://coolors.co/
+https://css-tricks.com/examples/hrs/
+https://developer.mozilla.org/
+https://udemy.com/
+
+I consulted a few developer's in different fields regarding the google maps API and other pieces of functionality of the application. This was absolutely invaluable as they gave me great advice on how to go about implimenting the functions I wanted. 
+
+And ofcourse, Code Institute, the tutors, the mentors and the course material. 
 
 
 
