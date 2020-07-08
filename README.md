@@ -66,7 +66,6 @@ Technologies I used in this project are:
 ### Frameworks
 - Bootstrap
 
-
 ## Resources
 - Travery Media Youtube Channel 
 - Travery Media Udemy Course "Javascript from the beginning"
@@ -81,6 +80,7 @@ Technologies I used in this project are:
 - I ran the CSS through a CSS checker and no errors found [CSS Checker](https://jigsaw.w3.org/css-validator/)
 - I ran the code through a HTML checker and no errors found with only warnings for no "H" titles in certain sectiona elements. This was left empty due to them being dymanically filled with Javascript. [HTML Checker](https://validator.w3.org/nu/#l96c39)
 - There were nono errors found when running the Javascript through [JSHint](https://jshint.com/) only warnings that I was using ES6 syntax that may not be compatable to all browsers.
+- Throughout the entire project, I was also using console.log's to ensure JS code was working as well as inspecting Chrome Developer Tools and display settings to ensure that the site was responsive.
 
 ## Deployment
 - Open the GitHub console
@@ -96,6 +96,7 @@ Technologies I used in this project are:
 - jet black:#322C25
 - smokey black:#0A0705;
 - background:#FFE9D1;
+
 ## Media
 Rock, Paper, Lizard, Spock and Scissors were taken from this [Quora Post](https://www.quora.com/What-are-other-variations-of-rock-scissors-paper-hand-game)
 [Pixlr Online Photoshop](https://pixlr.com/x/)
@@ -114,6 +115,8 @@ https://developer.mozilla.org/
 https://udemy.com/
 
 I consulted a few developer's in different fields regarding the google maps API and other pieces of functionality of the application. This was absolutely invaluable as they gave me great advice on how to go about implimenting the functions I wanted. 
+
+I also used Travery Media's Udemy Course on Javascript to help me build the review page.
 
 And ofcourse, Code Institute, the tutors, the mentors and the course material. 
 
