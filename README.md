@@ -45,7 +45,7 @@ The following link shows the initial mockups for the project
     - The once the user allows the geolocation the coffee shops near the users location drop onto the screen adding a nice effect.
     - 
 
-### Features to impliment
+### Features to implement
 - Local storage of the review to the DOM once it get's posted
 - Add directions to the google map so that users can navigate to the cafe/coffee shop without leaving the website
 - Add an additional game so that the user has more options of what to play while they wait for their coffee
@@ -113,9 +113,8 @@ https://coolors.co/
 https://css-tricks.com/examples/hrs/
 https://developer.mozilla.org/
 https://udemy.com/
-
-I consulted a few developer's in different fields regarding the google maps API and other pieces of functionality of the application. This was absolutely invaluable as they gave me great advice on how to go about implimenting the functions I wanted. 
-
+https://developers.google.com/maps/documentation/
+I consulted a few developer's in different fields regarding the google maps API and other pieces of functionality of the application. This was absolutely invaluable as they gave me great advice and help on how to go about implimenting the functions I wanted. I also used the google maps documentation to add in some of this functionality.
 I also used Travery Media's Udemy Course on Javascript to help me build the review page.
 
 And ofcourse, Code Institute, the tutors, the mentors and the course material. 
