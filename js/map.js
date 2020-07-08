@@ -63,9 +63,11 @@ function initMap() {
 }
 //creating the markers and adding a drop animation to it
 function createMarker(place, coffeeInfo) {
-  let marker = new google.maps.Marker({
+    let coffeeCup = `http://maps.google.com/mapfiles/kml/pal2/icon54.png`;
+    let marker = new google.maps.Marker({
     map: map,
     draggable: false,
+    icon: coffeeCup,
     animation: google.maps.Animation.DROP,
     position: place.geometry.location,
   });
